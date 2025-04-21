@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+.sidebar img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 20px;
+}
+.sidebar .sidebar-element {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: 0.3s;
+    margin: 0;
+    cursor: pointer;
+}
+.sidebar .sidebar-element:hover {
+    background: #f4f4f4;
+}
+.sidebar a i {
+    margin-right: 10px;
+}
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    width: 100%;
+}
+.search-form {
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 10px;
+}
+.search-form input {
+	padding: 10px;
+	border: solid 1px #9c9c9c;
+}
+
+.search-form button {
+	padding: 10px;
+	border: solid 1px #9c9c9c;
+	cursor: pointer;
+	background-color: lightblue;
+}
+table {
+	border-collapse: collapse;
+	margin-left: 10px;	
+}
+table th, table td {
+	border: solid 1px #ddd;
+	text-align: left;
+}
+table th, td {
+	background: #f4f4f4;
+	padding: 10px 10px;
+}
+
+table td {
+	background: transparent;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #333;
+}
+
+.user-btn {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.new-user {
+    font-weight: bold;
+}
+
+.profile-options {
+    display: flex;
+    gap: 10px;
+}
+
+.profile {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    background: green;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.profile:hover {
+    opacity: 0.8;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Call to Action */
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.red-btn {
+    background: red;
+    text-decoration: none;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+}
+
+.tax-image {
+    /* width: 100%; */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 300px; width: 550px;
+}
+
+#tax-filling-form {
+	padding: 20px;
+	width: 60vw;
+	margin: auto;
+}
+
+#tax-filling-form label{
+	display: block;
+	font-size: 20px;
+}
+
+#tax-filling-form input{
+	margin: 10px 0;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	font-size: 15px;
+	border: none;
+	border-bottom: solid 2px rgba(0,0,0,0.5);
+	background: transparent;
+	width: 100%;
+}
+
+#tax-filling-form button {
+	background: #D53737;
+	color: white;
+	padding: 5px 30px;
+	border: none;
+	border-radius: 50px;
+}
+
+.payment-success {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	color: #238543;
+}
+
+.payment-success .close-button {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 10px;
+	background: #2512F7;
+	border: none;
+	color: white;
+}
+
+.payment-success svg {
+	color: #C5F6A6;
+}

@@ -1,0 +1,426 @@
+@charset "UTF-8";
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e8e8e8;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.top-nav .contact-info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.top-nav .contact-info a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.top-nav .social-icons a {
+  margin-left: 10px;
+  color: #333;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+}
+
+.main-nav .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #d32f2f;
+}
+
+.main-nav .menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.main-nav .menu li {
+  margin-right: 20px;
+}
+
+.main-nav .menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main-nav .menu #login {
+	display: none;
+	padding: 10px 20px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.main-nav .menu #tax-beneficiary {
+	position: absolute;
+	right: 100px;
+	background: white;
+	width: fit-content;
+	z-index: 99;
+	display: none;
+	grid-template-columns: auto auto;
+	gap: 30px;
+	padding: 20px;
+}
+
+.main-nav .menu #tax-beneficiary .elements {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+}
+
+.main-nav .menu a:hover {
+  text-decoration: underline;
+  color: coral;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("./images/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  min-height: 80vh;
+}
+
+.hero-content {
+  max-width: 50%;
+  margin-left: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  line-height: 50px;
+  margin: 0 0 10px;
+  font-style: bold;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.hero-image img {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+ .hero-image {
+	margin-right: 20px;
+}
+
+/* Why Liberty Tax Section */
+.why-liberty-tax {
+  padding: 40px 150px;
+  background: linear-gradient(to bottom, #ffffff, #d9edf7);
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+  min-height: 60vh;
+}
+
+.why-liberty-tax .why-content {
+  margin-bottom: 20px;
+  text-align: left;
+  flex: 1 1;
+}
+
+.why-liberty-tax .why-content p{
+  font-size: 1.5em;
+}
+
+.why-liberty-tax h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+}
+
+.why-liberty-tax p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 30px;
+}
+
+.why-liberty-tax .why-features {
+	display: flex;
+	flex-direction: column;
+  flex: 1 1;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.why-liberty-tax .feature {
+  flex: 1 1 60px;
+  margin: 10px;
+  text-align: left;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.why-liberty-tax .feature i {
+  font-size: 2em;
+  color: #d32f2f;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.why-liberty-tax .feature p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Services Section */
+.services {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.services .section-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #eee;
+}
+
+.service-card h3 {
+  font-size: 1.2em;
+  margin: 15px 20px 10px;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 1em;
+  margin: 10px 20px;
+  color: #555;
+}
+
+.service-card .read-more {
+  display: block;
+  text-align: right;
+  padding: 10px 20px;
+  color: #d32f2f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.service-card .read-more:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: url('./images/contact form img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-content {
+    background: #1C2F3F; /* Semi-transparent black background for the form */
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px; /* Adjust as needed */
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    /* background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background for inputs */
+    /* color: #fff; */ 
+    background: white;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff; /* Example blue color */
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ... (previous CSS code) ... */
+
+footer {
+    padding: 100px 50px;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.footer-div {
+    flex: 1 0 200px; /* Adjust minimum width as needed */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.footer-logo {
+    max-width: 150px; /* Adjust logo size */
+    margin-bottom: 10px;
+}
+
+h3 {
+	margin: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #666;
+    margin-top: 20px;
+}
+
+/* Style for icons */
+.fas, .fab, .far {
+    margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-div {
+        flex: 1 0 150px; /* Adjust minimum width for smaller screens */
+    }
+}
+
+.about {
+  padding: 50px;
+  text-align: center;
+  background: #224D70;
+  color: white;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+}
+
+.about-content img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.green-btn {
+  background: green;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+  color: black;
+  background: white;
+  font-size: 20px;
+  padding: 50px;
+}

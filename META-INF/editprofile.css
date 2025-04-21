@@ -1,0 +1,43 @@
+.display-flex {
+	display: flex;
+	gap: 10px;
+	align-items: start;
+	justify-content: space-between;
+}
+
+#edit-profile {
+	padding: 20px;
+}
+
+#edit-profile label{
+	display: block;
+}
+
+#edit-profile input, textarea{
+	margin: 10px 0 15px 0;
+	width: 80%;
+	border: none;
+	border-bottom: solid 2px rgba(0,0,0,0.2);
+	padding: 5px 20px;
+	background: transparent; 
+	font-size: 15px;
+}
+
+#edit-profile textarea {
+	border: solid 2px rgba(0,0,0,0.2);
+	height: 100px;
+}
+
+#edit-profile button {
+	padding: 5px 20px;
+	background: #D53737;
+	color: white;
+	border-radius: 50px;
+	border: none;
+	margin-left: 80%;
+}
+
+.left-section, .right-section {
+	border: solid 2px rgba(0,0,0,0.2);
+	padding: 20px;
+}

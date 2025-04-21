@@ -1,0 +1,134 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Example background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 900px; /* Adjust as needed */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevents image from overflowing */
+}
+
+.login-image {
+    flex: 1;
+    background-color: #007bff; /* Example blue background */
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-image img {
+    max-width: 200px; /* Adjust image size as needed */
+    margin-bottom: 20px;
+}
+
+.image-content h2 {
+    margin-bottom: 10px;
+}
+
+.image-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.image-content li {
+    margin-bottom: 10px;
+}
+
+.image-content p {
+    font-weight: bold;
+}
+
+.login-form {
+    flex: 1;
+    padding: 40px;
+}
+
+.back-home {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative; /* For positioning the icon */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 30px); /* Adjust for icon space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 30px; /* Space for the icon */
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #aaa;
+    pointer-events: none; /* Prevent clicking the icon */
+}
+
+.toggle-password {
+    right: 10px;
+    cursor: pointer;
+}
+
+.remember-me {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+}

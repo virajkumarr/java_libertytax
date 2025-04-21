@@ -1,0 +1,93 @@
+/* General Styles */
+
+/* Profile Container */
+.profile-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+}
+
+
+.profile-container .left-section {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+/* Profile Picture */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Profile Details */
+.profile-details {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.profile-details h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.profile-info div {
+    width: 48%;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profile-info span {
+    color: #333;
+}
+
+/* Buttons */
+.profile-actions {
+    margin-top: 20px;
+}
+
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+    }
+    
+    .profile-info {
+        flex-direction: column;
+    }
+
+    .profile-info div {
+        width: 100%;
+    }
+}
